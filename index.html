@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        h1{height:20px; text-align: center; text-decoration: underline; font-weight: bold; font-family: cursive;
+        font-style: italic; color:red;margin-top:5px;
+        }
+        label{height: 20px; margin: 2px 15%;
+        }
+        textarea{ height: 25px; width:70%;height: 20px; margin: 2px 15%; border: 1px solid; 
+        }
+        [type="text"]{
+            height: 25px; width:70%;height: 20px; margin: 2px 15%; border: 1px solid; 
+        }
+        [type="password"]{
+            height: 25px; width:70%;height: 20px; margin: 2px 15%; border: 1px solid; 
+        }
+        [type="email"]{
+            height: 25px; width:70%; height: 20px; margin: 2px 15%; border: 1px solid; 
+        }
+        [type="number"]{
+            height: 25px; width:70%;  margin: 2px 15%; border: 1px solid;
+        }
+        [type="date"]{
+            height: 25px; width:70%;  margin: 2px 15%; border: 1px solid;
+        }
+        [type="datetime-local"]{
+            height: 25px; width:70%;  margin: 2px 15%; border: 1px solid;
+        }
+        [type="tel"]{
+            height: 25px; width:70%;  margin: 2px 15%; border: 1px solid;
+        }
+        [type="week"]{
+            height: 25px; width:70%;  margin: 2px 15%; border: 1px solid;
+        }
+        [type="month"]{
+            height: 25px; width:70%;  margin: 2px 15%; border: 1px solid;
+        }
+        [type="time"]{
+            height: 25px; width:70%;  margin: 2px 15%; border: 1px solid;
+        }
+        fieldset{
+            height: 150px; width:68%;  margin: 2px 15%; border: 1px solid;
+        }
+        [type="range"]{
+            height: 25px; width:70%;  margin: 2px 15%; border: 1px solid;
+        }
+        [type="color"]{
+            height: 25px; width:40%;  margin: 2px 15%; border: 1px solid;
+        }
+        [type="submit"]{
+            height: 25px; width:5%;  margin: 2px 15%; border: 1px solid;background-color: orange;
+        }
+        [type="reset"]{
+            height: 25px; width:5%;  margin: 2px 15%; border: 1px solid; background-color: red;
+        }
+        [type="button"]{
+            height: 25px; width:5%;  margin: 2px 15%; border: 1px solid;background-color: green;
+        }
+        
+    </style>
+</head>
+<body>
+    <form name="my form" action="" method="post" enctype="multipart/form-data">
+        <h1>My Form</h1>
+        <label>Search:</label>
+        <input type="search" name="s"><br><br>
+        <label>U.R.L:</label>
+        <input type="url" name="u" ><br><br>
+        <label>User Name:</label>
+        <input type="text" name="u" placeholder="enterusername" required autofocus="cursor">
+        <label>Password:</label>
+        <input type="password" name="p" placeholder="enterpassword" required>
+        <label>Enter Name:</label>
+        <input type="text" name="n" placeholder="entername" required>
+        <label>F-Name:</label>
+        <input type="text" name="f" placeholder="enterfathername">
+        <label>Email-id:</label>
+        <input type="email" name="e" required>
+        <label>D.O.B:</label>
+        <input type="date" name="d" required>
+        <label>Age:</label>
+        <input type="number" name="a">
+        <label>Mobile Number:</label>
+        <input type="tel" name="m" required>
+        <label>Weeks:</label>
+        <input type="week" name="w">
+        <label>Months:</label>
+        <input type="month" name="m">
+        <label>Time:</label>
+        <input type="time" name="t">
+        <label>Date and Time:</label>
+        <input type="datetime-local" name="dt">
+        <label>Gender:</label>
+        <input type="radio" name="r" value="g">Male
+        <input type="radio" name="r" value="g">Female<br><br>
+        <label>Relationship status:</label>
+        <input type="radio" name="rs" value="s">Married
+        <input type="radio" name="rs" value="s">Unmarried<br><br>
+        <label>Qualification:</label>
+        <input type="checkbox" name="q" value="f">B.C.A 
+        <input type="checkbox" name="q" value="f">B.B.A    
+        <input type="checkbox" name="q" value="f">M.C.A
+        <input type="checkbox" name="q" value="f">M.B.A 
+        <input type="checkbox" name="q" value="f">B.TECh
+        <input type="checkbox" name="q" value="f">M.TECH<br><br>
+        <label>Work With Section</label>
+        <fieldset>
+            <legend>Education Marks:</legend>
+            <label>10th</label>
+            <input type="text" name="p">
+            <label>12th</label>
+            <input type="text" name="p">
+            <label>Gradaution</label>
+            <input type="text" name="p">
+        </fieldset>
+        <label>Course:</label>
+        <select name="se">
+            <option selected disabled>---SELECT---</option>
+            <option>C</option>
+            <option>C++</option>
+            <option>JAVA</option>
+            <option>PYTHON</option>
+            <option>HTML</option>
+            <option>CSS</option>
+            <option>JS</option>
+        </select><br><br>
+        <label>Range:</label>
+        <input type="range" name="n" min="0" max="10">
+        <label>Color</label>
+        <input type="color" name="c">
+        <label>Comments</label>
+        <textarea name="ta" placeholder="entercomments" rows="9" cols="4"></textarea>
+        <button type="submit">Login</button>
+        <button type="reset">Cancle</button>
+    </form>
+    <button type="button">Save</button><br><br>
+</body>
+</html>
